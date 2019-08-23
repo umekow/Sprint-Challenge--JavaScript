@@ -1,6 +1,6 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
 
-
+/*******added 1 to the end of class name because the class was already created in prototype assignment*******/
 class CuboidMaker1{
     constructor(attr){
         this.length = attr.length; 
@@ -15,7 +15,11 @@ class CuboidMaker1{
     }
   }
 
-  const cuboid1 = new CuboidMaker1({length: 4, width: 5, height: 5}); 
+  const cuboid1 = new CuboidMaker1({
+      length: 4, 
+      width: 5, 
+      height: 5
+    }); 
 
  
 
@@ -36,6 +40,8 @@ class CubeMaker extends CuboidMaker1{
     }
 }
 
-const cube = new CubeMaker({length: 3, width: 3, height: 3}); 
+const cube = new CubeMaker(
+    {length: 3, width: 3, height: 3}
+    ); 
 console.log(cube.volume()); 
 console.log(cube.cubeSurfaceArea()); 
